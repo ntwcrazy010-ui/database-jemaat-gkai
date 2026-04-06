@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Jemaat GKAI Anugerah</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <i class="fas fa-church"></i>
+                <h1>Database Jemaat</h1>
+                <p><strong>Gereja Kristus Anugerah Indonesia</strong></p>
+            </div>
+        </header>
+
+        <div class="form-container">
+            <form id="jamaatForm">
+                <div class="form-group">
+                    <label for="nama"><i class="fas fa-user"></i> Nama Lengkap *</label>
+                    <input type="text" id="nama" name="nama" placeholder="John Doe" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tempatLahir"><i class="fas fa-map-marker-alt"></i> Tempat Lahir *</label>
+                    <input type="text" id="tempatLahir" name="tempatLahir" placeholder="Jakarta" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tanggalLahir"><i class="fas fa-calendar"></i> Tanggal Lahir *</label>
+                    <input type="date" id="tanggalLahir" name="tanggalLahir" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="noHp"><i class="fas fa-phone"></i> Nomor HP * (08xxxxxxxxx)</label>
+                    <input type="tel" id="noHp" name="noHp" placeholder="08123456789" required>
+                </div>
+
+                <button type="submit">
+                    <i class="fas fa-save"></i>
+                    Simpan Data Jemaat
+                </button>
+            </form>
+        </div>
+
+        <div id="message" class="message"></div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <i class="fas fa-users"></i>
+                <span id="totalJamaat">0</span>
+                <small>Total Jemaat Terdaftar</small>
+            </div>
+        </div>
+
+        <footer style="text-align: center; margin-top: 30px; color: white; font-size: 0.9em;">
+            <p>Powered by <i class="fab fa-github"></i> GitHub Pages | GKAI Anugerah</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
